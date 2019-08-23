@@ -47,7 +47,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
                 mFragmentTransaction.replace(R.id.frame_container, mCategoryFragment, CategoryFragment.class.getSimpleName());
 
 //              addToBackStack =  obyek fragment yang saat ini kita ciptakan masuk ke dalam sebuah fragment stack.  Nantinya ketika kita tekan tombol back, ia akan pop-out keluar dari stack dan menampilkan obyek fragment sebelumnya, HomeFragment.
-//                mFragmentTransaction.addToBackStack(null);
+                mFragmentTransaction.addToBackStack(null);
                 mFragmentTransaction.commit();
             }
         }
