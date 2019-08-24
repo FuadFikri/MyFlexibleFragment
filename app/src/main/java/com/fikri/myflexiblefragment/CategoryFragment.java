@@ -42,8 +42,8 @@ public class CategoryFragment extends Fragment implements  View.OnClickListener{
         if (v.getId() == R.id.btn_detail_category){
             DetailCategoryFragment mDetailCategoryFragment = new DetailCategoryFragment();
             Bundle mBundle = new Bundle();
-            mBundle.putString(DetailCategoryFragment.EXTRA_NAME, "Lifestyle");
-            String description = "Kategori ini akan berisi produk-produk lifestyle";
+            mBundle.putString(DetailCategoryFragment.EXTRA_NAME, "Lifestyle pake bundle");
+            String description = "Kategori ini akan berisi produk-produk lifestyle string";
             mDetailCategoryFragment.setArguments(mBundle);
             mDetailCategoryFragment.setDescription(description);
             FragmentManager mFragmentManager = getFragmentManager();
